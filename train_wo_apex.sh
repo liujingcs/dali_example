@@ -1,0 +1,1 @@
+python -m torch.distributed.launch --nproc_per_node=2 main_wo_apex.py -a resnet18 --dali_cpu --b 128 --loss-scale 128.0 --workers 4 --lr=0.4 --opt-level O2 ./
